@@ -12,13 +12,13 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "players")
-public class Player {
+@Table(name = "caracters")
+public class Caracter {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id")
-	private UUID playerId;
+	private UUID caracterId;
 	
 	private String name;
 	
@@ -93,8 +93,8 @@ public class Player {
 		this.inventory = inventory;
 	}
 
-	public UUID getPlayerId() {
-		return playerId;
+	public UUID getCaracterId() {
+		return caracterId;
 	}
 	
 	

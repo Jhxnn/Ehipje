@@ -4,8 +4,8 @@ import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.Ehipje.models.Caracter;
+import com.Ehipje.models.User;
 
-public interface PlayerRepository extends JpaRepository<Caracter, UUID>{
-	
+public interface UserRepository extends JpaRepository<User, UUID>{
+
 }

@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.Ehipje.models.Caracter;
 
-public interface PlayerRepository extends JpaRepository<Caracter, UUID>{
-	
+public interface CaracterRepository extends JpaRepository<Caracter, UUID>{
+
 }

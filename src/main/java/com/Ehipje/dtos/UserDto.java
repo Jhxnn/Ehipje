@@ -1,5 +1,5 @@
 package com.Ehipje.dtos;
 
-public record UserDto() {
+public record UserDto(String login, String password, String name) {
 
 }

@@ -34,6 +34,12 @@ public class UserService {
 	}
 	
 	public User updateUser(UserDto userDto, UUID id) {
+		var user = findById(id);
 		
+	}
+	public User addCaracter(UUID idCaracter, UUID id) {
+		var user = findById(id);
+		var caracter = findcaracte.findbyid()
+		user.setCaracters(null);
 	}
 }

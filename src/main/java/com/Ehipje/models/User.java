@@ -65,8 +65,8 @@ public class User {
 		return caracters;
 	}
 
-	public void setCaracters(List<Caracter> caracters) {
-		this.caracters = caracters;
+	public void setCaracters(Caracter caracters) {
+		this.caracters.add(caracters);
 	}
 	
 	

@@ -18,6 +18,9 @@ public class UserService {
 	@Autowired
 	UserRepository userRepository;
 	
+	@Autowired
+	CaracterService caracterService;
+	
 	
 	public List<User> findAll(){
 		return userRepository.findAll();
@@ -33,13 +36,11 @@ public class UserService {
 		return userRepository.save(user);
 	}
 	
-	public User updateUser(UserDto userDto, UUID id) {
-		var user = findById(id);
-		
-	}
 	public User addCaracter(UUID idCaracter, UUID id) {
 		var user = findById(id);
-		var caracter = findcaracte.findbyid()
-		user.setCaracters(null);
+		var caracter = caracterService.findById(idCaracter);
+		user.setCaracters(caracter);
+		return userRepository.save(user);
+		
 	}
 }

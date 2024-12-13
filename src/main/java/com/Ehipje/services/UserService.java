@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.Ehipje.dtos.UserDto;
+import com.Ehipje.models.Caracter;
 import com.Ehipje.models.User;
 import com.Ehipje.repositories.UserRepository;
 
@@ -42,5 +43,8 @@ public class UserService {
 		user.setCaracters(caracter);
 		return userRepository.save(user);
 		
+	}
+	public User findByCaracter(Caracter caracter) {
+		return userRepository.findByCaracter(caracter);
 	}
 }

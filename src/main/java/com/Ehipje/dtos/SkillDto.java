@@ -1,5 +1,5 @@
 package com.Ehipje.dtos;
 
-public record SkillDto() {
+public record SkillDto(String description, int status) {
 
 }

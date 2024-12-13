@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.Ehipje.dtos.CaracterDto;
-import com.Ehipje.dtos.UserDto;
 import com.Ehipje.models.Caracter;
 import com.Ehipje.repositories.CaracterRepository;
 

@@ -96,6 +96,10 @@ public class Caracter {
 	public UUID getCaracterId() {
 		return caracterId;
 	}
+
+	public void setCaracterId(UUID caracterId) {
+		this.caracterId = caracterId;
+	}
 	
 	
 

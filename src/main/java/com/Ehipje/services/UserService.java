@@ -44,7 +44,8 @@ public class UserService {
 		return userRepository.save(user);
 		
 	}
-	public User findByCaracter(Caracter caracter) {
+	public User findByCaracter(UUID idCaracter) {
+		var caracter = caracterService.findById(idCaracter);
 		return userRepository.findByCaracter(caracter);
 	}
 }
